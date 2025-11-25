@@ -7,7 +7,7 @@ A modern, interactive Rock Paper Scissors game built with vanilla JavaScript, fe
 ---
 
 ## 🎮 Live Demo
-👉 [Pl Now](https://yourusername.github.io/rock-paper-scissors-arena/)
+👉 [Pl Now](https://mehdi-dev-sudo.github.io/Rock-Paper-Scissors-Arena/)
 
 ---
 
