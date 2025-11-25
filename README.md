@@ -117,8 +117,8 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@](https://github.com/yourusername)
+**Mehdi-dev-sudo**
+- GitHub: [@Mehdi-dev-sudo](https://github.com/Mehdi-dev-sudo)
 
 ## 🙏 Acknowledgments
 
