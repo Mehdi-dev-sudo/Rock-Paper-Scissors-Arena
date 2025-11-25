@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Epic Rock Paper Scissors game with modern UI and animations">
+    <meta name="author" content="Your Name">
+    <title>Epic Rock Paper Scissors Arena</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+</head>
+<body>
+    <div class="background-animation" aria-hidden="true">
+        <div class="floating-shape">🪨</div>
+        <div class="floating-shape">📄</div>
+        <div class="floating-shape">✂️</div>
+    </div>
+
+    <main class="game-container">
+        <header>
+            <h1 class="game-title">🎮 Epic Rock Paper Scissors Arena</h1>
+        </header>
+
+        <section class="score-section" aria-label="Game scores">
+            <div class="score-item">
+                <div class="score-label">YOU</div>
+                <div class="score-value" id="playerScore" aria-live="polite">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">ROUND</div>
+                <div class="score-value" id="roundNumber" aria-live="polite">1</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">COMPUTER</div>
+                <div class="score-value" id="computerScore" aria-live="polite">0</div>
+            </div>
+        </section>
+
+        <section class="game-arena" aria-label="Game arena">
+            <div class="player-section">
+                <div class="player-label">👤 YOU</div>
+                <div class="choice-display" id="playerChoice" role="img" aria-label="Your choice">❓</div>
+            </div>
+
+            <div class="vs-divider" aria-hidden="true">VS</div>
+
+            <div class="player-section">
+                <div class="player-label">🤖 COMPUTER</div>
+                <div class="choice-display" id="computerChoice" role="img" aria-label="Computer choice">❓</div>
+            </div>
+        </section>
+
+        <section class="result-section" aria-live="assertive">
+            <div class="result-message" id="resultMessage"></div>
+        </section>
+
+        <section class="choices-section">
+            <h2 class="choices-title">Choose Your Weapon!</h2>
+            <div class="choices-container" role="group" aria-label="Game choices">
+                <button class="choice-btn" data-choice="rock" aria-label="Choose rock" title="Rock crushes Scissors (Press R or 1)">
+                    🪨
+                </button>
+                <button class="choice-btn" data-choice="paper" aria-label="Choose paper" title="Paper covers Rock (Press P or 2)">
+                    📄
+                </button>
+                <button class="choice-btn" data-choice="scissors" aria-label="Choose scissors" title="Scissors cuts Paper (Press S or 3)">
+                    ✂️
+                </button>
+            </div>
+        </section>
+
+        <section class="controls-section">
+            <button class="control-btn reset-btn" id="resetBtn" aria-label="Reset game">
+                🔄 Reset Game
+            </button>
+            <button class="control-btn mode-btn" id="modeBtn" aria-label="Toggle game mode">
+                🎯 Best of 5
+            </button>
+            <button class="control-btn mode-btn" id="autoBtn" aria-label="Toggle auto play">
+                🤖 Auto Play
+            </button>
+        </section>
+
+        <section class="stats-section" aria-label="Game statistics">
+            <div class="stat-item">
+                <div class="stat-label">Win Rate</div>
+                <div class="stat-value" id="winRate">0%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Total Games</div>
+                <div class="stat-value" id="totalGames">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Win Streak</div>
+                <div class="stat-value" id="winStreak">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Best Streak</div>
+                <div class="stat-value" id="bestStreak">0</div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="src/js/game.js"></script>
+</body>
+</html>
