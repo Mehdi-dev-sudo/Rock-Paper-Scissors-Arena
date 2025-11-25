@@ -57,7 +57,7 @@ Then open `http://localhost:8000` in your browser.
 
 ## 📁 Project Structure
 
-
+```bash
 rock-paper-scissors-arena/
 ├── index.html          # Main HTML file
 ├── README.md           # Documentation
@@ -70,6 +70,7 @@ rock-paper-scissors-arena/
 └── js/
 ├── game.js         # Main game logic
 └── utils.js        # Utility functions
+```
 
 ## 🛠️ Technologies Used
 
